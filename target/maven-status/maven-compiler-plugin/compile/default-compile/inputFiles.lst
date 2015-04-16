@@ -1,0 +1,9 @@
+/home/stagiaire/workspace/springsample/src/main/java/fr/treeptik/dao/PersonneDAO.java
+/home/stagiaire/workspace/springsample/src/main/java/fr/treeptik/runtime/Runtime.java
+/home/stagiaire/workspace/springsample/src/main/java/fr/treeptik/model/Personne.java
+/home/stagiaire/workspace/springsample/src/main/java/fr/treeptik/dao/impl/PersonneMemoryDAO.java
+/home/stagiaire/workspace/springsample/src/main/java/fr/treeptik/utils/DateUtils.java
+/home/stagiaire/workspace/springsample/src/main/java/fr/treeptik/dao/impl/PersonneJPADAO.java
+/home/stagiaire/workspace/springsample/src/main/java/fr/treeptik/exception/DAOException.java
+/home/stagiaire/workspace/springsample/src/main/java/fr/treeptik/exception/ServiceException.java
+/home/stagiaire/workspace/springsample/src/main/java/fr/treeptik/service/PersonneService.java

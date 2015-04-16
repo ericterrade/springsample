@@ -1,0 +1,9 @@
+fr/treeptik/exception/DAOException.class
+fr/treeptik/runtime/Runtime.class
+fr/treeptik/dao/impl/PersonneJPADAO.class
+fr/treeptik/model/Personne.class
+fr/treeptik/service/PersonneService.class
+fr/treeptik/exception/ServiceException.class
+fr/treeptik/utils/DateUtils.class
+fr/treeptik/dao/PersonneDAO.class
+fr/treeptik/dao/impl/PersonneMemoryDAO.class
