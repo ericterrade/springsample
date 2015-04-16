@@ -15,6 +15,10 @@
 		name="personneDAO" ref="personneDAO"></property> ref est le nom du bean </bean> -->
 
 	<util:properties id="config" location="classpath:config.properties" />
+	
+	<jdbc:initialize-database data-source="dataSource">
+	<jdbc:script location="classpath:init.sql"/>
+	</jdbc:initialize-database>
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
