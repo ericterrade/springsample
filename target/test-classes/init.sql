@@ -1,4 +1,4 @@
 
 
-
-delete from Personne
+TRUNCATE TABLE Personne;
+delete from Personne;

@@ -28,8 +28,8 @@ public class Runtime {
 		
 		System.out.println(personneService.getValeur());
 		
-//		Personne personne = new Personne(null, "dupont", "pierre");
-//		personneService.save(personne);
+		Personne personne = new Personne(null, "dupont", "pierre");
+		personneService.save(personne);
 //		Personne personne2 = new Personne(null, "TERRADE", "Eric");
 //		personneService.save(personne2);
 //		System.out.println(personneService.findAll());
