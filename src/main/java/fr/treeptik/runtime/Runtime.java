@@ -18,11 +18,21 @@ public class Runtime {
 		PersonneService personneService = (PersonneService) context
 				.getBean("personneService");
 		
-		Personne personne = new Personne(null, "dupont", "pierre");
-		personneService.save(personne);
-		Personne personne2 = new Personne(null, "TERRADE", "Eric");
-		personneService.save(personne2);
-		System.out.println(personneService.findAll());
+		
+		personneService.setValeur("valuer1");
+		
+
+		personneService = (PersonneService) context
+				.getBean("personneService");
+		
+		
+		System.out.println(personneService.getValeur());
+		
+//		Personne personne = new Personne(null, "dupont", "pierre");
+//		personneService.save(personne);
+//		Personne personne2 = new Personne(null, "TERRADE", "Eric");
+//		personneService.save(personne2);
+//		System.out.println(personneService.findAll());
 
 	}
 

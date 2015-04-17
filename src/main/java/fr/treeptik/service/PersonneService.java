@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,6 +18,7 @@ import fr.treeptik.model.Personne;
 import fr.treeptik.utils.DateUtils;
 
 @Service
+@Scope(value = "singleton")
 public class PersonneService {
 	
 	private Logger logger = Logger.getLogger(PersonneService.class);
@@ -31,6 +33,16 @@ public class PersonneService {
 	
 	@Value("#{config.masuperproperty}")
 	private String value;
+	
+	public String getValue() {
+		return value;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+	private String valeur;
 
 	@Transactional
 	public Personne save(Personne personne) throws ServiceException {
@@ -61,6 +73,14 @@ public class PersonneService {
 	public List<Personne> findAll() {
 		return personneDAO.findAll();
 
+	}
+
+	public String getValeur() {
+		return valeur;
+	}
+
+	public void setValeur(String valeur) {
+		this.valeur = valeur;
 	}
 
 }
