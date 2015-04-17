@@ -32,8 +32,8 @@
 				expression="execution(* fr.treeptik.service.PersonneService.save(fr.treeptik.model.Personne)) " />
 			<aop:after-returning pointcut-ref="personneSavePointCut"
 				method="afterReturningSavePersonne" returning="result" />
-<!-- 				<aop:before method="beforeSavePersonne"/> -->
-<!-- 				<aop:after-throwing method="onErrorSavePersonne" throwing="e" pointcut-ref="personneSavePointCut"/> -->
+				<aop:before method="beforeSavePersonne" pointcut-ref="personneSavePointCut"/>
+ 				<aop:after-throwing method="onErrorSavePersonne" throwing="e" pointcut-ref="personneSavePointCut"/>
 		</aop:aspect>
 	</aop:config>
 	
